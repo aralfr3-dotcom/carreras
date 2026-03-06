@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Malla Curricular</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+    background:#f2f4f8;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* HERO */
+
+.hero{
+    height:220px;
+    background-image:url("faces.png");
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.25);
+}
+
+/* SELECTOR */
+
+.selector-carrera{
+    background:white;
+    padding:15px;
+    border-radius:6px;
+    margin-top:-40px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* TARJETA INFORMACIÓN */
+
+.carrera-card{
+    background:linear-gradient(135deg,#0b3c6d,#1f5ea8);
+    color:white;
+    padding:30px;
+    border-radius:6px;
+    margin-top:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+.carrera-card h1{
+    font-size:32px;
+    font-weight:700;
+}
+
+.carrera-card h5{
+    opacity:.9;
+}
+
+.perfil{
+    margin-top:15px;
+    font-size:14px;
+    line-height:1.5;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    background:white;
+    border-radius:6px;
+    padding:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.sidebar a{
+    display:block;
+    padding:8px 0;
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+.sidebar a:hover{
+    color:#0b3c6d;
+    text-decoration:underline;
+}
+
+.sidebar .info-item{
+    display:block;
+    padding:8px 0;
+    color:#333;
+    font-weight:500;
+    border-bottom:1px solid #eee;
+}
+
+.sidebar .info-item:last-child{
+    border-bottom:none;
+}
+
+.sidebar .info-valor{
+    color:#0b3c6d;
+    font-weight:700;
+    margin-left:5px;
+}
+
+/* MALLA */
+
+.malla{
+    margin-top:40px;
+}
+
+.semestre-card{
+    background:white;
+    border-radius:8px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    margin-bottom:25px;
+}
+
+.semestre-header{
+    background:#8b1e2d;
+    color:white;
+    font-weight:700;
+    padding:10px;
+    border-radius:8px 8px 0 0;
+    text-align:center;
+}
+
+.asignatura{
+    padding:6px 12px;
+    font-size:14px;
+    border-bottom:1px solid #eee;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="hero">
+<div class="hero-overlay"></div>
+</div>
+
+<div class="container">
+
+<div class="selector-carrera">
+
+<label class="form-label"><strong>Seleccionar Universidad y Carrera</strong></label>
+
+<select id="universidadSelect" class="form-select"></select>
+
+</div>
+
+<div class="row mt-4">
+
+<div class="col-lg-8">
+
+<div class="carrera-card" id="infoCarrera"></div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="sidebar" id="sidebarInfo">
+
+<h5>Información</h5>
+
+<div id="planEstudioLink"></div>
+<div id="acreditacionInfo"></div>
+<div id="arancelInfo"></div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="mallaContainer" class="row malla"></div>
+
+</div>
+
+<script src="mallas_universidades_icinf_modificado.js"></script>
+
+<script>
+
+const select = document.getElementById("universidadSelect");
+
+// Verificar que mallas existe y tiene datos
+if (typeof mallas !== 'undefined' && mallas.length > 0) {
+    mallas.forEach((item, index) => {
+        const option = document.createElement("option");
+        option.value = index;
+        option.textContent = item.universidad + " - " + item.carrera;
+        select.appendChild(option);
+    });
+
+    mostrarMalla(0);
+
+    select.addEventListener("change", function() {
+        mostrarMalla(this.value);
+    });
+} else {
+    console.error('No se encontraron datos de mallas');
+    document.getElementById("infoCarrera").innerHTML = '<div class="alert alert-danger">Error: No se pudieron cargar los datos</div>';
+}
+
+function mostrarMalla(index) {
+    const item = mallas[index];
+    const info = document.getElementById("infoCarrera");
+    const container = document.getElementById("mallaContainer");
+    const planEstudioDiv = document.getElementById("planEstudioLink");
+    const acreditacionDiv = document.getElementById("acreditacionInfo");
+    const arancelDiv = document.getElementById("arancelInfo");
+
+    // Actualizar información principal (sin arancel)
+    info.innerHTML = `
+        <h5>${item.universidad}</h5>
+        <h1>${item.carrera}</h1>
+        <h4>DURACIÓN SEMESTRAL<br>${item.duracion_semestres} SEMESTRES</h4>
+        <div class="perfil">
+            <strong>PERFIL DE EGRESO</strong><br>
+            ${item.perfil_de_egreso}
+        </div>
+    `;
+
+    // Actualizar link del Plan de Estudio
+    if (item.web) {
+        planEstudioDiv.innerHTML = `
+            <a href="${item.web}" target="_blank" rel="noopener noreferrer">Plan de Estudios</a>
+        `;
+    } else {
+        planEstudioDiv.innerHTML = `<span class="text-muted">Plan de Estudios no disponible</span>`;
+    }
+
+    // Actualizar información de acreditación (mismo estilo que arancel)
+    if (item.anios_acreditacion) {
+        acreditacionDiv.innerHTML = `
+            <span class="info-item">
+                Años de Acreditación <span class="info-valor">${item.anios_acreditacion} años</span>
+            </span>
+        `;
+    } else {
+        acreditacionDiv.innerHTML = `
+            <span class="info-item">
+                Años de Acreditación <span class="text-muted">No disponible</span>
+            </span>
+        `;
+    }
+
+    // Actualizar información de arancel
+    arancelDiv.innerHTML = `
+        <span class="info-item">
+            Arancel <span class="info-valor">${item.arancel}</span>
+        </span>
+    `;
+
+    // Limpiar y reconstruir malla curricular
+    container.innerHTML = "";
+
+    item.malla_curricular.forEach(sem => {
+        let asignaturasHTML = "";
+        
+        sem.asignaturas.forEach(asig => {
+            asignaturasHTML += `<div class="asignatura">${asig.nombre}</div>`;
+        });
+        
+        const col = document.createElement("div");
+        col.className = "col-xl-2 col-lg-3 col-md-4 col-sm-6";
+        col.innerHTML = `
+            <div class="semestre-card">
+                <div class="semestre-header">
+                    SEMESTRE ${sem.semestre}
+                </div>
+                ${asignaturasHTML}
+            </div>
+        `;
+        container.appendChild(col);
+    });
+}
+
+</script>
+
+</body>
+</html>
