@@ -7,6 +7,10 @@ const mallas = [
     "arancel": "$5.404.000 a $6.675.000 (dependiendo de sede)",
     "web": "https://facultades.unab.cl/ingenieria/carrera/ingenieria-civil-informatica/",
     "anios_acreditacion": "6",
+    "fechas_acreditacion": "Desde 25 de diciembre de 2022 hasta 25 de diciembre de 2028",
+    "acreditaciones_internacionales": "EQANIE – EURO INF (3 años, mayo 2023 a mayo 2026)",
+    "arancel_2026": "$5.674.000 a $7.050.000 (dependiendo de sede)",
+    "observaciones": "Ofrese oportunidad de cursar certificados en Ciencia de Datos, Inteligencia Artificial y Ciberseguridad, programas desarrollados y certificados por IBM de manera 100% online y gratuito para alumnos UNAB (tópicos se incluyen en cursos de especialidad",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -117,6 +121,10 @@ const mallas = [
     "arancel": "$4.946.000 a $6.487.000 (dependiendo de sede)",
     "web": "https://admision.uautonoma.cl/carreras/ingenieria-civil-informatica/",
     "anios_acreditacion": "5",
+    "fechas_acreditacion": "Desde 13 de agosto de 2025 hasta 13 de agosto de 2030",
+    "acreditaciones_internacionales": "No en Ingeniería Civil en Informárica. Si institucionalmente (ANECA Y AQAS)",
+    "arancel_2026": "$5.193.000 a $6.811.000 (dependiendo de sede)",
+    "observaciones": "Ofrece Microcedenciales en User Experience, Machine Learning y BigData. Permite Adelantar Prácticas Profesionales",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -245,6 +253,10 @@ const mallas = [
     "arancel": "$5.900.000",
     "web": "https://ingenieria.ucsc.cl/carreras/ingenieria-civil-informatica/",
     "anios_acreditacion": "5",
+    "fechas_acreditacion": "Desde 3 de marzo de 2021 hasta 3 de marzo de 2026 (extendida)",
+    "acreditaciones_internacionales": "Acuerdo de Washington 7 años (desde junio de 2022 a junio de 2029)",
+    "arancel_2026": "$6.200.000",
+    "observaciones": "Ofrece Certificaciones acádemicas en: Programación nivel medio y en Innovación y Emprendimineto Tecnológico",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -365,6 +377,10 @@ const mallas = [
     "arancel": "$5.877.000",
     "web": "https://portal.ucm.cl/carreras/ingenieria-civil-informatica",
     "anios_acreditacion": "5",
+    "fechas_acreditacion": "Desde 20 de enero de 2021 hasta 20 de enero de 2026 (extendida)",
+    "acreditaciones_internacionales": "Acuerdo de Washington 7 años (enero de 2024 a enero 2031)",
+    "arancel_2026": "$6.183.000",
+    "observaciones": "Convenio con NVIDIA (Centro de Educación GPU). Malla incluye 3 asignaturas con 'certificado'",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -491,6 +507,10 @@ const mallas = [
     "arancel": "$3.950.000",
     "web": "https://uaysen.cl/departamentos/ciencias-naturales-y-tecnologia/ingenieria-civil-informatica",
     "anios_acreditacion": "3",
+    "fechas_acreditacion": "Desde 12 de abril de 2023 hasta 12 de abril de 2026",
+    "acreditaciones_internacionales": "No hay Evidencias",
+    "arancel_2026": "$4.108.000",
+    "observaciones": "-----------",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -602,6 +622,10 @@ const mallas = [
     "arancel": "$7.068.946",
     "web": "https://admision.udec.cl/ingenieria-civil-informatica/",
     "anios_acreditacion": "7",
+    "fechas_acreditacion": "Desde 22 de noviembre de 2023 hasta 22 de noviembre de 2030",
+    "acreditaciones_internacionales": "Ingeniería Civil Informática en proceso de acreditación ABET (2026)",
+    "arancel_2026": "$7.422.393",
+    "observaciones": "Actualización de malla entre 2024 y 2025 disminuyó duración de carrera de 11 semestres a 10 semestres",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -697,13 +721,13 @@ const mallas = [
           {"nombre": "Formulación y Evaluación de Proyectos"},
           {"nombre": "Electivo 4"},
           {"nombre": "Electivo 5"},
-          {"nombre": "Electivo 6"},
+          {"nombre": "Electivo 6"}
         ]
       },
       {
         "semestre": 10,
         "asignaturas": [
-          {"nombre": "Memoria de Titulo"},
+          {"nombre": "Memoria de Titulo"}
         ]
       }
     ]
@@ -715,7 +739,11 @@ const mallas = [
     "perfil_de_egreso": "El Ingeniero o la Ingeniera Civil Informático de la Universidad de La Frontera es un o una profesional del área de las tecnologías de la información y comunicación con capacidades para desempeñarse en los ámbitos de diseño e implementación de soluciones informáticas de vanguardia, ingeniería de software e ingeniería de datos, con la finalidad de contribuir al desarrollo económico y social del país.  Su sello profesional es el diseño en ingeniería con innovación y responsabilidad social. Cuenta con formación profesional en ciencias básicas, ciencias de la ingeniería, ciencias de la computación y de especialidad, fundamentalmente integración de tecnologías informáticas, ingeniería de software, diseño de proyectos informáticos, análisis y seguridad de datos. La integración de estos conocimientos permite a este o esta profesional solucionar problemas de gestión de la información centrado en las necesidades de las personas a través de la mejora y automatización de los procesos organizacionales.  Posee habilidades para comunicarse de manera global, integrar equipos de trabajo de alto rendimiento y aplicar nuevos conocimientos utilizando estrategias apropiadas de aprendizaje. Asimismo, reconoce las responsabilidades éticas en su quehacer profesional.  Su formación le permite desempeñarse en organizaciones del sector público o privado, y ejercer su profesión en forma independiente.",
     "arancel": "$4.379.000",
     "web": "https://admision.ufro.cl/ingenieria-civil-informatica/",
-    "anios_acreditacion": "6",
+    "anios_acreditacion": "5",
+    "fechas_acreditacion": "Desde 3 de septiembre de 2025 hasta 3 de septiembre de 2030",
+    "acreditaciones_internacionales": "No hay Evidencias",
+    "arancel_2026": "$4.611.000",
+    "observaciones": "disminuyó acreditación nacional de 6 a 5 años",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -851,6 +879,10 @@ const mallas = [
     "arancel": "$4.190.000",
     "web": "https://www.upla.cl/admision/carreras-profesionales/facultad-de-ingenieria/ingenieria-civil-informatica/",
     "anios_acreditacion": "5",
+    "fechas_acreditacion": "Desde 25 de mayo de 2022 hasta 25 de mayo de 2027",
+    "acreditaciones_internacionales": "No hay Evidencias",
+    "arancel_2026": "$4.200.000",
+    "observaciones": "-----------",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -971,6 +1003,10 @@ const mallas = [
     "arancel": "$3.908.000",
     "web": "https://www.uvm.cl/ingenieria-civil-informatica/",
     "anios_acreditacion": "4",
+    "fechas_acreditacion": "Desde 4 de enero de 2023 hasta 4 de enero de 2027",
+    "acreditaciones_internacionales": "No hay Evidencias",
+    "arancel_2026": "$4.084.000",
+    "observaciones": "-----------",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -1083,6 +1119,10 @@ const mallas = [
     "arancel": "$6.700.000",
     "web": "https://admision.finis.cl/carrera/ingenieria-civil-en-informatica-y-telecomunicaciones/",
     "anios_acreditacion": "5",
+    "fechas_acreditacion": "Desde 29 de febrero de 2024 hasta 29 de febrero de 2029",
+    "acreditaciones_internacionales": "Acuerdo de Washington 7 años (diciembre de 2022 a diciembre 2029)",
+    "arancel_2026": "$7.080.000",
+    "observaciones": "-----------",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -1205,6 +1245,10 @@ const mallas = [
     "arancel": "$5.563.000",
     "web": "https://admision.ugm.cl/carreras/ingenieria-civil-informatica/",
     "anios_acreditacion": "4",
+    "fechas_acreditacion": "Desde 24 de septiembre de 2025 hasta 24 de septiembre de 2029 ",
+    "acreditaciones_internacionales": "No hay Evidencias",
+    "arancel_2026": "$5.752.000",
+    "observaciones": "Formación contempla certificaciones con Microsoft, IBM, Oracle, CISCO. (Estudiantes rinde examen y deben pagar por el mismo)",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -1334,7 +1378,11 @@ const mallas = [
     "perfil_de_egreso": "El/la egresado/a de Ingeniería Civil Informática de la Universidad San Sebastián tiene una sólida formación disciplinar complementada con habilidades para el trabajo en equipos interdisciplinarios, que sustentan su desempeño profesional en las áreas de Proyectos Informáticos, Sistemas de Información y Gestión de Área Informática, para proponer e implementar soluciones que generen valor al negocio o proceso, y consideren los recursos, estándares, lineamientos, y normas involucradas. Posee formación en Ciencias Básicas, de la Ingeniería, y disciplinar en área de Tecnologías de la Información, herramientas cualitativas y cuantitativas, de modelamiento, y tecnológicas. Además, posee habilidades de abstracción, síntesis, comunicación, y manejo del idioma inglés a nivel intermedio. En consecuencia, es capaz de analizar problemas, identificar y definir requisitos informáticos, aplicar enfoques propios de la disciplina al proceso de resolución de problemas, diseñando, evaluando e implementando soluciones computacionales, así como la formulación, evaluación y gestión de proyectos existentes y/o de innovación, promoviendo el mejoramiento de los sistemas, los procesos del negocio, el cumplimiento de los objetivos organizacionales y el emprendimiento tecnológico. Posee las actitudes y valores que se evidencian en el ámbito de su profesión, demostrando una actitud innovadora que contribuye al mejoramiento continuo, un comportamiento ético en el cumplimiento de las normas y reglamentos propios de su disciplina considerando la realidad y el contexto, con un claro sentido de responsabilidad social y medio ambiental. Es capaz de vincularse respetuosamente con los otros, trabajando en equipos multidisciplinarios con una actitud empática frente a las personas y sus posturas, valorando sus aportes en las decisiones profesionales. El/la Ingeniero/a Civil Informático/a puede desempeñarse en campos ocupacionales tales como empresas e instituciones productivas o de servicio, públicas, privadas o mixtas, nacionales o internacionales, asumiendo cargos operativos, intermedios y de alta responsabilidad. Además, posee habilidades para crear sus propias empresas en contextos de innovación, integración, y rediseño, aportando al desarrollo económico y de la sociedad",
     "arancel": "$5.298.700 a $6.672.600 (dependiendo de la sede)",
     "web": "https://admision.uss.cl/carreras/ingenieria-civil-informatica/",
-    "anios_acreditacion": "6",
+    "anios_acreditacion": "5",
+    "fechas_acreditacion": "Desde 28 de octubre de 2021 hasta 28 de octubre de 2026",
+    "acreditaciones_internacionales": "Ingeniería Civil Informática No. Institucionalmente AQAS 6 años",
+    "arancel_2026": "$5.563.600 a $7.050.000 (dependiendo de la sede)",
+    "observaciones": "Convenios conducentes a certificados:  Oracle Academy, Red Hat Academy, AWS Academy, CISCO Networking, British Council",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -1448,6 +1496,10 @@ const mallas = [
     "arancel": "$5.557.000",
     "web": "https://www.ust.cl/carreras/ingenieria-civil-informatica-y-sistemas-inteligentes/",
     "anios_acreditacion": "4",
+    "fechas_acreditacion": "Desde 10 de diciembre de 2025 hasta 10 de diciembre de 2029",
+    "acreditaciones_internacionales": "No hay Evidencias",
+    "arancel_2026": "$Entre 5.532.000 a $5.946.00 dependiendo de sede",
+    "observaciones": "Ofrece certificaciones internas y externas a estudiantes. Electivos articulados con Diplomados. Desde 2025 se imparte la carrera en la sede La Serena",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -1575,6 +1627,10 @@ const mallas = [
     "arancel": "$6.710.000",
     "web": "https://usm.cl/admision/carreras/ingenieria-civil-informatica/",
     "anios_acreditacion": "6",
+    "fechas_acreditacion": "Desde 30 de diciembre de 2022 hasta 30 de diciembre de 2028",
+    "acreditaciones_internacionales": "Acuerdos de Washington 7 años (diciembre de 2024 a diciembre 2031)",
+    "arancel_2026": "$7.110.000",
+    "observaciones": "Práctica profesional en periodo estival",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -1694,7 +1750,11 @@ const mallas = [
     "perfil_de_egreso": "El/la Ingeniero/a Civil en Informática y Telecomunicaciones es un profesional con capacidad de liderazgo, actitud emprendedora, creativa e innovadora, pensamiento crítico, visión pluralista y compromiso con los problemas de la esfera pública, una sólida formación en Ciencias Básicas, Ciencias de la Ingeniería, Informática, Telecomunicaciones, Planificación y Gestión. En el centro de la formación de estos Ingenieros se encuentran los Sistemas Informáticos y de Telecomunicaciones, los que permiten monitorear, mejorar, automatizar y controlar procesos y productos dentro de la industria. Estos sistemas incluyen software desarrollado para satisfacer requerimientos específicos de empresas y personas, bases de datos, sistemas operativos, computadores, redes de comunicación de datos y protocolos de comunicación. Este Ingeniero de perfil mixto entre las telecomunicaciones y la informática, estará capacitado para crear, conducir y participar hábilmente en la gestión, diseño, análisis, implementación y operación de Sistemas Informáticos y de Telecomunicaciones. También estará capacitado para gestionar proyectos de esta área, y podrá desempeñarse en cargos ejecutivos de empresas o servicios afines a las mismas, así como emprender sus propios negocios.",
     "arancel": "$7.353.000",
     "web": "https://admision.udp.cl/carrera/ingenieria-civil-en-informatica-y-telecomunicaciones/",
-    "anios_acreditacion": "7",
+    "anios_acreditacion": "6",
+    "fechas_acreditacion": "Desde 15 de noviembre de 2023 hasta 15 de noviembre de 2029",
+    "acreditaciones_internacionales": "No hay Evidencias",
+    "arancel_2026": "$7.750.000",
+    "observaciones": "-----------",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -1818,6 +1878,10 @@ const mallas = [
     "arancel": "$4.376.000",
     "web": "https://www.unach.cl/ingenieria-civil-en-informatica/",
     "anios_acreditacion": "3",
+    "fechas_acreditacion": "Desde 11 de abril de 2023 hasta 11 de abril de 2026",
+    "acreditaciones_internacionales": "No hay Evidencias",
+    "arancel_2026": "$4.814.000",
+    "observaciones": "-----------",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -1949,6 +2013,10 @@ const mallas = [
     "arancel": "UF203 (Concepción) UF235 (Las Condes)",
     "web": "https://ingenieria.udd.cl/carrera/ingenieria-civil-en-informatica-e-innovacion-tecnologica/",
     "anios_acreditacion": "6",
+    "fechas_acreditacion": "Desde 16 de diciembre de 2021 hasta 16 de diciembre de 2027",
+    "acreditaciones_internacionales": "No hay Evidencias",
+    "arancel_2026": "UF203 (Concepción) UF235 (Las Condes)",
+    "observaciones": "ofrece 3 vías de titulación: Programa Ingeniería con la Empresa, Especializaciones y Doble Titulación con Ingeniería Civil Industrial",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -2075,6 +2143,11 @@ const mallas = [
     "arancel": "UF203 (Concepción) UF235 (Las Condes)",
     "web": "https://ingenieria.udd.cl/carrera/ingenieria-civil-en-informatica-e-innovacion-tecnologica/",
     "anios_acreditacion": "6",
+    "anios_acreditacion": "6",
+    "fechas_acreditacion": "Desde 16 de diciembre de 2021 hasta 16 de diciembre de 2027",
+    "acreditaciones_internacionales": "No hay Evidencias",
+    "arancel_2026": "UF203 (Concepción) UF235 (Las Condes)",
+    "observaciones": "ofrece 3 vías de titulación: Programa Ingeniería con la Empresa, Especializaciones y Doble Titulación con Ingeniería Civil Industrial",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -2227,6 +2300,10 @@ const mallas = [
     "arancel": "$6.490.000",
     "web": "https://www.admision.usach.cl/carreras/ingenieria-civil-en-informatica",
     "anios_acreditacion": "7",
+    "fechas_acreditacion": "Desde 25 de febrero de 2021 hasta 25 de febrero de 2028",
+    "acreditaciones_internacionales": "No hay Evidencias",
+    "arancel_2026": "$6.782.000",
+    "observaciones": "-----------",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -2351,6 +2428,10 @@ const mallas = [
     "arancel": "$6.168.000",
     "web": "https://www.pucv.cl/pucv/pregrado/ingenieria-civil-informatica",
     "anios_acreditacion": "7",
+    "fechas_acreditacion": "Desde 19 de enero de 2022 hasta 19 de enero de 2029",
+    "acreditaciones_internacionales": "No hay Evidencias",
+    "arancel_2026": "$6.775.000",
+    "observaciones": "-----------",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -2475,6 +2556,10 @@ const mallas = [
     "arancel": "$5.588.000",
     "web": "https://www.uach.cl/admision/valdivia/ingenieria-civil-en-informatica",
     "anios_acreditacion": "6",
+    "fechas_acreditacion": "Desde 14 de septiembre de 2022 hasta 14 de septiembre de 2028",
+    "acreditaciones_internacionales": "No hay Evidencias",
+    "arancel_2026": "$5.923.000",
+    "observaciones": "Malla Implementa talleres por temática semestral",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -2603,6 +2688,10 @@ const mallas = [
     "arancel": "$5.324.000",
     "web": "https://admision.uct.cl/ing-civil-informatica/",
     "anios_acreditacion": "5",
+    "fechas_acreditacion": "Desde 13 de noviembre de 2024 hasta 13 de noviembre de 2029",
+    "acreditaciones_internacionales": "No hay Evidencias",
+    "arancel_2026": "$5.644.000",
+    "observaciones": "Práctica Profesional en el último semestre junto con el Trabajo de Título",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -2724,6 +2813,10 @@ const mallas = [
     "arancel": "$4.882.000",
     "web": "https://admision.ulagos.cl/Carreras/ingenieria-civil-en-informatica/",
     "anios_acreditacion": "5",
+    "fechas_acreditacion": "Desde 9 de septiembre de 2021 hasta 9 de septiembre de 2026",
+    "acreditaciones_internacionales": "No hay Evidencias",
+    "arancel_2026": "$5.078.000",
+    "observaciones": "Práctica Profesional en el último semestre junto a Proyecto de Título",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -2855,6 +2948,10 @@ const mallas = [
     "arancel": "$4.800.000",
     "web": "https://admision.uv.cl/carreras/ingenieria-civil-informatica",
     "anios_acreditacion": "6",
+    "fechas_acreditacion": "Desde 8 de marzo de 2023 hasta 8 de marzo de 2029",
+    "acreditaciones_internacionales": "No hay Evidencias",
+    "arancel_2026": "$5.289.000",
+    "observaciones": "-----------",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -2986,6 +3083,10 @@ const mallas = [
     "arancel": "$4.108.000",
     "web": "https://www.icci-unap.cl/",
     "anios_acreditacion": "5",
+    "fechas_acreditacion": "Desde 6 de julio de 2022 hasta 6 de julio de 2027 ",
+    "acreditaciones_internacionales": "No hay Evidencias",
+    "arancel_2026": "$4.437.000",
+    "observaciones": "-----------",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -3106,7 +3207,11 @@ const mallas = [
     "perfil_de_egreso": "El/la titulado/a de la carrera de Ingeniería Civil en Computación e Informática de la U. Central es un/a profesional capaz para analizar, diseñar, gestionar y desarrollar proyectos de software, computación aplicada y/o ciencias de datos, y así fortalecer los procesos de toma de decisiones estratégicas.  Cuenta con las competencias para elaborar propuestas innovadoras y sostenibles, con el fin de afrontar los desafíos locales y globales. Es un/a profesional capacitado/a para formar equipos multidisciplinarios con una mirada ética y ajustándose a las normas de la ingeniería.",
     "arancel": "$4.124.302",
     "web": "https://admisionucsh.cl/facultad-de-ingenieria-y-empresa/",
-    "anios_acreditacion": "5",
+    "anios_acreditacion": "4",
+    "fechas_acreditacion": "Desde 20 de octubre de 2021 hasta 20 de octubre de 2025 (extendida)",
+    "acreditaciones_internacionales": "No hay Evidencias",
+    "arancel_2026": "$4.372.000",
+    "observaciones": "Práctica Profesional en el último semestre junto con Seminario de Grado",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -3245,6 +3350,10 @@ const mallas = [
     "arancel": "$5.683.000",
     "web": "https://admision.ucn.cl/carreras/tecnologia-computacion/ingenieria-civil-en-computacion-e-informatica/",
     "anios_acreditacion": "6",
+    "fechas_acreditacion": "Desde 26 de noviembre de 2022 hasta 26 de noviembre de 2028",
+    "acreditaciones_internacionales": "No hay Evidencias",
+    "arancel_2026": "$5.940.000",
+    "observaciones": "-----------",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -3367,6 +3476,10 @@ const mallas = [
     "arancel": "$4.400.000 (La Serena) $5.950.000 (Santiago)",
     "web": "https://admision.ucentral.cl/carrera/ingenieria-civil-en-computacion-e-informatica/",
     "anios_acreditacion": "5",
+    "fechas_acreditacion": "Desde 13 de enero de 2022 hasta 13 de enero de 2027",
+    "acreditaciones_internacionales": "No hay Evidencias",
+    "arancel_2026": "$4.620.000 (La Serena) $6.250.000 (Santiago)",
+    "observaciones": "Práctica Profesional en Último Semestre",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -3492,6 +3605,10 @@ const mallas = [
     "arancel": "$5.650.000",
     "web": "https://admision.uta.cl/index.php/ingenieria-civil-en-computacion-e-informatica/",
     "anios_acreditacion": "6",
+    "fechas_acreditacion": "Desde 22 de junio de 2023 hasta 22 de junio de 2029",
+    "acreditaciones_internacionales": "No hay Evidencias",
+    "arancel_2026": "$5.650.000",
+    "observaciones": "Ofrece Salida Intermedia a Ejecución",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -3623,6 +3740,10 @@ const mallas = [
     "arancel": "$5.650.000",
     "web": "https://admision.uta.cl/index.php/ingenieria-civil-informatica-iquique/",
     "anios_acreditacion": "6",
+    "fechas_acreditacion": "Desde 22 de junio de 2023 hasta 22 de junio de 2029",
+    "acreditaciones_internacionales": "No hay Evidencias",
+    "arancel_2026": "$5.650.000",
+    "observaciones": "-----------",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -3737,6 +3858,10 @@ const mallas = [
     "arancel": "$6.845.644",
     "web": "https://www.umayor.cl/um/carreras/ingenieria-civil-en-computacion-e-informatica-santiago",
     "anios_acreditacion": "5",
+    "fechas_acreditacion": "Desde 27 de octubre de 2021 hasta 27 de octubre de 2026",
+    "acreditaciones_internacionales": "No hay Evidencias",
+    "arancel_2026": "$7.358.978",
+    "observaciones": "-----------",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -3864,6 +3989,10 @@ const mallas = [
     "arancel": "$7.904.800 (ingreso después de cursar plan común de Ingeniería)",
     "web": "https://ingenieria.uchile.cl/carreras/4971/ingenieria-civil-en-computacion###",
     "anios_acreditacion": "7",
+    "fechas_acreditacion": "Desde 23 de diciembre de 2025 hasta 23 de diciembre de 2032",
+    "acreditaciones_internacionales": "ABET",
+    "arancel_2026": "$------",
+    "observaciones": "Ingreso por plan común de Ingeniería y Ciencias",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -3988,6 +4117,10 @@ const mallas = [
     "arancel": "UF 230 (ingreso por plan comín Ingniería Civl",
     "web": "https://admision.uandes.cl/carreras/area-ingenieria-y-administracion/ingenieria-civil-en-ciencias-de-la-computacion",
     "anios_acreditacion": "6",
+    "fechas_acreditacion": "Desde 14 de diciembre de 2022 hasta 14 de diciembre de 2028",
+    "acreditaciones_internacionales": "ABET",
+    "arancel_2026": "$------",
+    "observaciones": "Ingreso por plan común de ingeniería",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -4117,6 +4250,10 @@ const mallas = [
     "arancel": "$5.848.000",
     "web": "https://admision.utalca.cl/carreras/ingenieria-civil-en-computacion/",
     "anios_acreditacion": "6",
+    "fechas_acreditacion": "Desde 27 de noviembre de 2019 hasta 27 de noviembre de 2025 (Extendida)",
+    "acreditaciones_internacionales": "Acuerdo de Washington 7 años (enero de 2025 a enero 2032)",
+    "arancel_2026": "$5.650.000",
+    "observaciones": "-----------",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -4242,7 +4379,11 @@ const mallas = [
     "perfil_de_egreso": "La persona egresada de Ingeniería Civil en Computación, mención Informática, de la Universidad Tecnológica Metropolitana, posee una formación integral que combina sólidos fundamentos en ciencias de la ingeniería, la computación y la gestión tecnológica. Durante su proceso formativo desarrolla una mirada estratégica frente a los desafíos digitales contemporáneos, con la capacidad de integrar creatividad, innovación y responsabilidad social en el diseño de soluciones tecnológicas que transformen la sociedad. A lo largo de la carrera, se fomenta el pensamiento crítico, la adaptabilidad y el liderazgo colaborativo, preparando a cada estudiante para desenvolverse en entornos cambiantes y multidisciplinarios. Además, la formación enfatiza valores éticos y una visión sostenible de la tecnología, inspirando a las y los futuros ingenieros a contribuir al desarrollo digital del país con una mirada humana, inclusiva y comprometida con el bienestar colectivo  Quienes egresan de la carrera de Ingeniería Civil en Computación de la Universidad de Talca son profesionales integrales, con enfoque en el área de la informática, capaces de idear, diseñar, desarrollar y desplegar soluciones de software innovadoras, considerando aspectos técnicos, económicos, sociales y/o ambientales.  Gracias a su base formativa en ciencias básicas y de la ingeniería, poseen una visión integral de los sistemas computacionales y la capacidad de resolver problemas desafiantes, de manera profesional, con sentido ético y de responsabilidad social. Así mismo, la formación en emprendimiento les permite identificar oportunidades de negocio en el sector tecnológico y desarrollar proyectos propios.  Además, cuentan con habilidades de comunicación y liderazgo que le permiten trabajar colaborativamente en equipos multi e interdisciplinarios y adaptarse a entornos profesionales en constante evolución.",
     "arancel": "$4.620.000",
     "web": "https://conocetucarrera.utem.cl/ingenieria-civil-en-computacion-mencion-informatica/",
-    "anios_acreditacion": "5",
+    "anios_acreditacion": "4",
+    "fechas_acreditacion": "Desde 26 de marzo de 2026 hasta 26 de marzo de 2030",
+    "acreditaciones_internacionales": "No hay Evidencias",
+    "arancel_2026": "$4.763.300",
+    "observaciones": "Disminuyó años de acreditación nacional de 5 a 4 años",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -4368,10 +4509,14 @@ const mallas = [
     "universidad": "Universidad del Bío Bío",
     "carrera": "Ingeniería Civil en Informática",
     "duracion_semestres": 10,
-    "perfil_de_egreso": "El/la ingenier/a civil informático de la Universidad del Bío-Bío es un/a profesional capacitado/a para comprender la problemática organizacional en el ámbito de la informática y, a partir de ello, plantear y desarrollar soluciones pertinentes. Lo anterior se traduce en la formulación, evaluación, e implementación de proyectos de tecnologías de información y comunicación. Este profesional trabaja colaborativamente, lidera equipos multidisciplinarios en forma ética, proactiva, responsable y autónoma, respetando la diversidad de quienes conforman los equipos en que participa. El sello distintivo del o la egresado/a de esta carrera lo constituye su conocimiento de la gestión organizacional y su disposición hacia el logro de metas, optimizando los recursos informáticos disponibles en la organización en la que se desenvuelva. La formación profesional del ingeniero/a civil en informática contempla las áreas de: ciencias básicas, ciencias de la ingeniería, sistemas computacionales, ingeniería de software y base de datos y gestión de informática. Además, se distingue por el compromiso permanente con su aprendizaje, manejo del idioma inglés para apoyar el desarrollo de su trabajo y asumir su quehacer profesional y ciudadano, sirviendo a la sociedad con innovación, excelencia y responsabilidad social. ",
+    "perfil_de_egreso": "El/la ingenier/a civil informático de la Universidad del Bío-Bío es un/a profesional capacitado/a para comprender la problemática organizacional en el ámbito de la informática y, a partir de ello, plantear y desarrollar soluciones pertinentes. Lo anterior se traduce en la formulación, evaluación, e implementación de proyectos de tecnologías de información y comunicación. Este profesional trabaja colaborativamente, lidera equipos multidisciplinarios en forma ética, proactiva, responsable y autónoma, respetando la diversidad de quienes conforman los equipos en que participa. El sello distintivo del o la egresado/a de esta carrera lo constituye su conocimiento de la gestión organizacional y su disposición hacia el logro de metas, optimizando los recursos informáticos disponibles en la organización en la que se desenvuelva. La formación profesional del ingeniero/a civil en informática contempla las áreas de: ciencias básicas, ciencias de la ingeniería, sistemas computacionales, ingeniería de software y base de datos y gestión de informática. Además, se distingue por el compromiso permanente con su aprendizaje, manejo del idioma inglés para apoyar el desarrollo de su trabajo y asumir su quehacer profesional y ciudadano, sirviendo a la sociedad con innovación, excelencia y responsabilidad social. ",
     "arancel": "$4.594.000",
     "web": "https://ubiobio.cl/admision/Todas_las_Carreras/17/Ingenieria_Civil_en_Informatica_Concepcion/",
     "anios_acreditacion": "5",
+    "fechas_acreditacion": "Desde 15 de enero de 2025 hasta 15 de enero de 2030",
+    "acreditaciones_internacionales": "No hay Evidencias",
+    "arancel_2026": "$4.594.000",
+    "observaciones": "-----------",
     "malla_curricular": [
       {
         "semestre": 1,
@@ -4492,6 +4637,10 @@ const mallas = [
     "arancel": "$$$",
     "web": "###",
     "anios_acreditacion": "*",
+    "fechas_acreditacion": "XX",
+    "acreditaciones_internacionales": "--------",
+    "arancel_2026": "$------",
+    "observaciones": "-----------",
     "malla_curricular":  [
       { "semestre": 1,
         "asignaturas": [
@@ -4581,6 +4730,4 @@ const mallas = [
       ]}
     ]
   }
-
-  
-]
+];
