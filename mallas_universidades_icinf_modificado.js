@@ -4245,7 +4245,7 @@ const mallas = [
   {
     "universidad": "Universidad de Talca",
     "carrera": "Ingeniería Civil en Computación",
-    "duracion_semestres": 11,
+    "duracion_semestres": 10,
     "perfil_de_egreso": "  Quienes egresan de la carrera de Ingeniería Civil en Computación de la Universidad de Talca son profesionales integrales, con enfoque en el área de la informática, capaces de idear, diseñar, desarrollar y desplegar soluciones de software innovadoras, considerando aspectos técnicos, económicos, sociales y/o ambientales.  Gracias a su base formativa en ciencias básicas y de la ingeniería, poseen una visión integral de los sistemas computacionales y la capacidad de resolver problemas desafiantes, de manera profesional, con sentido ético y de responsabilidad social. Así mismo, la formación en emprendimiento les permite identificar oportunidades de negocio en el sector tecnológico y desarrollar proyectos propios.  Además, cuentan con habilidades de comunicación y liderazgo que le permiten trabajar colaborativamente en equipos multi e interdisciplinarios y adaptarse a entornos profesionales en constante evolución.",
     "arancel": "$5.848.000",
     "web": "https://admision.utalca.cl/carreras/ingenieria-civil-en-computacion/",
