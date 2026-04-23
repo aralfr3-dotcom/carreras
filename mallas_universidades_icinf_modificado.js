@@ -4114,7 +4114,7 @@ const mallas = [
     "carrera": "Ingeniería Civil en Ciencias de la Computación",
     "duracion_semestres": 11,
     "perfil_de_egreso": "No disponible",
-    "arancel": "UF 230 (ingreso por plan comín Ingniería Civl",
+    "arancel": "UF 230 (ingreso por plan común Ingeniería Civl",
     "web": "https://admision.uandes.cl/carreras/area-ingenieria-y-administracion/ingenieria-civil-en-ciencias-de-la-computacion",
     "anios_acreditacion": "6",
     "fechas_acreditacion": "Desde 14 de diciembre de 2022 hasta 14 de diciembre de 2028",
