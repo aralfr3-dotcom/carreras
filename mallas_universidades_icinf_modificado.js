@@ -4252,7 +4252,7 @@ const mallas = [
     "anios_acreditacion": "6",
     "fechas_acreditacion": "Desde 27 de noviembre de 2019 hasta 27 de noviembre de 2025 (Extendida)",
     "acreditaciones_internacionales": "Acuerdo de Washington 7 años (enero de 2025 a enero 2032)",
-    "arancel_2026": "$5.650.000",
+    "arancel_2026": "$6.222.000",
     "observaciones": "-----------",
     "malla_curricular": [
       {
