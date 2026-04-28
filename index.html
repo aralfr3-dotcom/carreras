@@ -65,6 +65,21 @@ body{
     line-height:1.5;
 }
 
+/* ESTILOS INTERACTIVOS ÁREAS */
+
+.area-clickable {
+    cursor: pointer;
+    display: inline-block;
+    padding: 2px 4px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.area-clickable:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: underline;
+}
+
 /* SIDEBAR */
 
 .sidebar{
@@ -122,6 +137,7 @@ body{
     border-radius:8px;
     box-shadow:0 3px 10px rgba(0,0,0,0.1);
     margin-bottom:25px;
+    overflow: hidden;
 }
 
 .semestre-header{
@@ -137,6 +153,20 @@ body{
     padding:6px 12px;
     font-size:14px;
     border-bottom:1px solid #eee;
+    transition: all 0.3s ease; /* Animación suave para los cambios de estado */
+}
+
+/* ESTILOS DE RESALTADO EN LA MALLA */
+
+.asignatura-resaltada {
+    background-color: #fff3cd; /* Amarillo suave */
+    border-left: 4px solid #ffc107; /* Borde destacado */
+    font-weight: bold;
+    color: #856404;
+}
+
+.asignatura-opacada {
+    opacity: 0.3;
 }
 
 </style>
@@ -190,6 +220,7 @@ body{
 <script>
 
 const select = document.getElementById("universidadSelect");
+let areaActiva = null; // Variable global para rastrear el área seleccionada
 
 // Verificar que mallas existe y tiene datos
 if (typeof mallas !== 'undefined' && mallas.length > 0) {
@@ -211,10 +242,37 @@ if (typeof mallas !== 'undefined' && mallas.length > 0) {
 }
 
 function mostrarMalla(index) {
+    // Reiniciar filtro visual al cambiar de malla
+    areaActiva = null; 
+    
     const item = mallas[index];
     const info = document.getElementById("infoCarrera");
     const container = document.getElementById("mallaContainer");
     const sidebarInfoContent = document.getElementById("sidebarInfoContent");
+
+
+    // ===== CONTAR ASIGNATURAS POR ÁREA (01–05) =====
+    const conteoAreas = {"01":0,"02":0,"03":0,"04":0,"05":0};
+
+    item.malla_curricular.forEach(sem => {
+        sem.asignaturas.forEach(asig => {
+            if (conteoAreas.hasOwnProperty(asig.area)) {
+                conteoAreas[asig.area]++;
+            }
+        });
+    });
+
+    // Se agregan las clases interactiva y el evento onclick
+    const areasHTML = `
+        <div class="mt-3" style="background: rgba(255,255,255,0.15); padding:10px; border-radius:6px;">
+            <strong>CANTIDAD DE ASIGNATURAS POR ÁREA</strong><br>
+            <span class="area-clickable" data-target-area="01" onclick="resaltarArea('01')">Área 01: ${conteoAreas["01"]} asignaturas</span><br>
+            <span class="area-clickable" data-target-area="02" onclick="resaltarArea('02')">Área 02: ${conteoAreas["02"]} asignaturas</span><br>
+            <span class="area-clickable" data-target-area="03" onclick="resaltarArea('03')">Área 03: ${conteoAreas["03"]} asignaturas</span><br>
+            <span class="area-clickable" data-target-area="04" onclick="resaltarArea('04')">Área 04: ${conteoAreas["04"]} asignaturas</span><br>
+            <span class="area-clickable" data-target-area="05" onclick="resaltarArea('05')">Área 05: ${conteoAreas["05"]} asignaturas</span>
+        </div>
+    `;
 
     // Actualizar información principal de la tarjeta azul
     info.innerHTML = `
@@ -225,6 +283,7 @@ function mostrarMalla(index) {
             <strong>PERFIL DE EGRESO</strong><br>
             ${item.perfil_de_egreso}
         </div>
+        ${areasHTML}
     `;
 
     // Preparar el HTML del Plan de Estudios
@@ -251,7 +310,7 @@ function mostrarMalla(index) {
         </span>
         
         <span class="info-item">
-            Arancel 2024 <span class="info-valor">${item.arancel || 'No disponible'}</span>
+            Arancel <span class="info-valor">${item.arancel || 'No disponible'}</span>
         </span>
         
         <span class="info-item">
@@ -271,7 +330,8 @@ function mostrarMalla(index) {
         let asignaturasHTML = "";
         
         sem.asignaturas.forEach(asig => {
-            asignaturasHTML += `<div class="asignatura">${asig.nombre}</div>`;
+            // Se inyecta el data-area para poder filtrarlo luego
+            asignaturasHTML += `<div class="asignatura" data-area="${asig.area}">${asig.nombre}</div>`;
         });
         
         const col = document.createElement("div");
@@ -285,6 +345,33 @@ function mostrarMalla(index) {
             </div>
         `;
         container.appendChild(col);
+    });
+}
+
+// Nueva función global para manejar el resaltado interactivo
+function resaltarArea(areaCode) {
+    const asignaturas = document.querySelectorAll('.asignatura');
+    const botonesArea = document.querySelectorAll('.area-clickable');
+
+    // Si se hace clic en la misma área que ya está activa, se quitan los filtros
+    if (areaActiva === areaCode) {
+        asignaturas.forEach(el => {
+            el.classList.remove('asignatura-resaltada', 'asignatura-opacada');
+        });
+        areaActiva = null;
+        return;
+    }
+
+    // Si es un área nueva, aplicar las clases correspondientes
+    areaActiva = areaCode;
+    asignaturas.forEach(el => {
+        if (el.getAttribute('data-area') === areaCode) {
+            el.classList.add('asignatura-resaltada');
+            el.classList.remove('asignatura-opacada');
+        } else {
+            el.classList.add('asignatura-opacada');
+            el.classList.remove('asignatura-resaltada');
+        }
     });
 }
 
