@@ -10,7 +10,7 @@ const mallas = [
     "fechas_acreditacion": "Desde 25 de diciembre de 2022 hasta 25 de diciembre de 2028",
     "acreditaciones_internacionales": "EQANIE – EURO INF (3 años, mayo 2023 a mayo 2026)",
     "arancel_2026": "$5.674.000 a $7.050.000 (dependiendo de sede)",
-    "observaciones": "Ofrese oportunidad de cursar certificados en Ciencia de Datos, Inteligencia Artificial y Ciberseguridad, programas desarrollados y certificados por IBM de manera 100% online y gratuito para alumnos UNAB (tópicos se incluyen en cursos de especialidad",
+    "observaciones": "Ofrece oportunidad de cursar certificados en Ciencia de Datos, Inteligencia Artificial y Ciberseguridad, programas desarrollados y certificados por IBM de manera 100% online y gratuito para alumnos UNAB (tópicos se incluyen en cursos de especialidad",
     "malla_curricular": [
       {
         "semestre": 1,
