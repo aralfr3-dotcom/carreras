@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Resumen de Áreas y Asignaturas</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+body {
+    background: #f2f4f8;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* HERO */
+.hero {
+    height: 220px;
+    background-image: url("faces.png"); 
+    background-color: #0b3c6d; 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.25);
+}
+
+/* TARJETA PRINCIPAL */
+.main-card {
+    background: white;
+    padding: 30px;
+    border-radius: 6px;
+    margin-top: -40px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 10;
+}
+
+.main-card h2 {
+    color: #0b3c6d;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* ESTILOS DE LA TABLA DESPLEGABLE */
+.table-areas {
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.area-row {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.area-row:hover {
+    background-color: #f8f9fa;
+}
+
+.area-row td {
+    padding: 15px;
+    border-bottom: 1px solid #dee2e6;
+    vertical-align: middle;
+}
+
+.area-number {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #8b1e2d; 
+    text-align: center;
+    width: 10%;
+}
+
+.area-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0b3c6d; 
+    width: 60%;
+}
+
+.area-action {
+    color: #6c757d;
+    font-weight: 500;
+    text-align: right;
+    width: 30%;
+}
+
+/* CONTENEDOR DE ASIGNATURAS */
+.subjects-container {
+    background: #f8f9fa;
+    border-left: 5px solid #0b3c6d;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* ESTILOS DE LAS ASIGNATURAS (NORMAL Y DESTACADA) */
+.subject-badge {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+    transition: all 0.2s ease;
+    user-select: none; /* Evita que el texto se seleccione al hacer clics rápidos */
+}
+
+.subject-badge:hover {
+    background-color: #e9ecef;
+}
+
+/* Clase que se activa al hacer clic */
+.subject-highlighted {
+    background-color: #f2d787 !important; /* Amarillo */
+    color: #856404 !important; /* Texto oscuro para contrastar */
+    border-color: #ffe8a1 !important;
+    font-weight: bold;
+    transform: scale(1.05); /* Pequeño efecto de zoom */
+    box-shadow: 0 3px 6px rgba(255, 193, 7, 0.4);
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="hero">
+    <div class="hero-overlay"></div>
+</div>
+
+<div class="container mb-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="main-card">
+                <h2>Asignaturas por Área en Oferta Académica Nacional</h2>
+                <p class="text-muted mb-4">Haz clic en cada fila para desplegar las asignaturas únicas impartidas a nivel nacional en esa área. <strong>Puedes hacer clic sobre el nombre de las asignaturas para destacarlas.</strong></p>
+                
+                <div class="table-responsive">
+                    <table class="table-areas">
+                        <thead>
+                            <tr style="background-color: #0b3c6d; color: white;">
+                                <th class="text-center py-3">Área</th>
+                                <th class="py-3">Nombre del Área</th>
+                                <th class="text-end py-3 px-3">Asignaturas Únicas</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tablaAreasBody">
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="mallas_universidades_icinf_modificado.js"></script>
+
+<script>
+// Función para alternar el destacado de las asignaturas
+function toggleHighlight(elemento) {
+    elemento.classList.toggle('subject-highlighted');
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    
+    // 1. Definir los nombres de las áreas solicitadas
+    const nombresAreas = {
+        "01": "Programación y Fundamentos de ciencias de computación",
+        "02": "Ingeniería de Software",
+        "03": "Datos e Inteligencia Artificial",
+        "04": "Arquitectura e Infraestructura de TI",
+        "05": "Gestión y Estrategia Tecnológica"
+    };
+
+    // 2. Inicializar un objeto con Sets para evitar asignaturas repetidas automáticamente
+    const asignaturasUnicasPorArea = {
+        "01": new Set(),
+        "02": new Set(),
+        "03": new Set(),
+        "04": new Set(),
+        "05": new Set()
+    };
+
+    // 3. Procesar el archivo js para extraer y clasificar las asignaturas
+    if (typeof mallas !== 'undefined' && mallas.length > 0) {
+        mallas.forEach(uni => {
+            uni.malla_curricular.forEach(semestre => {
+                semestre.asignaturas.forEach(asig => {
+                    if (asignaturasUnicasPorArea[asig.area]) {
+                        asignaturasUnicasPorArea[asig.area].add(asig.nombre);
+                    }
+                });
+            });
+        });
+    } else {
+        console.error("No se pudo cargar mallas_universidades_icinf_modificado.js o está vacío.");
+        document.getElementById('tablaAreasBody').innerHTML = '<tr><td colspan="3" class="text-center text-danger p-4">Error cargando los datos.</td></tr>';
+        return;
+    }
+
+    // 4. Construir el HTML dinámico de la tabla
+    const tbody = document.getElementById("tablaAreasBody");
+    let html = "";
+
+    // Iterar sobre cada área del 01 al 05
+    Object.keys(nombresAreas).forEach(codigoArea => {
+        const listaAsignaturas = Array.from(asignaturasUnicasPorArea[codigoArea]).sort();
+        const cantidadAsignaturas = listaAsignaturas.length;
+        
+        // Se agrega el evento onclick="toggleHighlight(this)" a cada etiqueta
+        const badgesHTML = listaAsignaturas.map(nombre => 
+            `<span class="subject-badge" onclick="toggleHighlight(this)">${nombre}</span>`
+        ).join('');
+
+        html += `
+            <tr class="area-row" data-bs-toggle="collapse" data-bs-target="#collapseArea${codigoArea}" aria-expanded="false" aria-controls="collapseArea${codigoArea}">
+                <td class="area-number">${codigoArea}</td>
+                <td class="area-name">${nombresAreas[codigoArea]}</td>
+                <td class="area-action pe-3">Ver ${cantidadAsignaturas} asignaturas ▼</td>
+            </tr>
+            
+            <tr>
+                <td colspan="3" class="p-0 border-0">
+                    <div class="collapse" id="collapseArea${codigoArea}">
+                        <div class="subjects-container">
+                            ${cantidadAsignaturas > 0 ? badgesHTML : '<span class="text-muted">No se encontraron asignaturas para esta área.</span>'}
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        `;
+    });
+
+    // 5. Inyectar en el DOM
+    tbody.innerHTML = html;
+});
+</script>
+
+</body>
+</html>
