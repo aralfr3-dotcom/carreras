@@ -719,9 +719,9 @@ const mallas = [
         "asignaturas": [
           {"nombre": "Proyecto Informático","area":"02"},
           {"nombre": "Formulación y Evaluación de Proyectos","area":"05"},
-          {"nombre": "Electivo 4","area":"01"},
-          {"nombre": "Electivo 5","area":"01"},
-          {"nombre": "Electivo 6","area":"01"}
+          {"nombre": "Electivo 4","area":"00"},
+          {"nombre": "Electivo 5","area":"00"},
+          {"nombre": "Electivo 6","area":"00"}
         ]
       },
       {
@@ -763,8 +763,8 @@ const mallas = [
           {"nombre": "Introducción al Diseño de Ingeniería","area":"00"},
           {"nombre": "Cálculo Diferencial (1/2 s2)","area":"00"},
           {"nombre": "Cálculo Integral (2/2 s2)","area":"00"},
-          {"nombre": "Matemática para la Computación I (1/2 s2)","area":"01"},
-          {"nombre": "Matemática para la Computación II (2/2 s2)","area":"01"},
+          {"nombre": "Matemática para la Computación I (1/2 s2)","area":"00"},
+          {"nombre": "Matemática para la Computación II (2/2 s2)","area":"00"},
           {"nombre": "Física I","area":"00"},
           {"nombre": "Laboratorio de Ciencias","area":"00"}
         ]
@@ -1082,11 +1082,11 @@ const mallas = [
       {
         "semestre": 8,
         "asignaturas": [
-          {"nombre": "Evaluación de Proyectos","area":"01"},
-          {"nombre": "Gestión de Proyectos Informáticos","area":"01"},
-          {"nombre": "Tecnologías para la Gestión Empresarial","area":"01"},
-          {"nombre": "Estrategia Empresarial","area":"01"},
-          {"nombre": "Inglés VI","area":"01"}
+          {"nombre": "Evaluación de Proyectos","area":"05"},
+          {"nombre": "Gestión de Proyectos Informáticos","area":"05"},
+          {"nombre": "Tecnologías para la Gestión Empresarial","area":"05"},
+          {"nombre": "Estrategia Empresarial","area":"00"},
+          {"nombre": "Inglés VI","area":"00"}
         ]
       },
       {
@@ -1340,7 +1340,7 @@ const mallas = [
           {"nombre": "Data Science","area":"03"},
           {"nombre": "Metodología de la Investigación","area":"00"},
           {"nombre": "Ingeniería Económica","area":"00"},
-          {"nombre": "Programación de Videojuegos","area":"02"},
+          {"nombre": "Programación de Videojuegos","area":"01"},
           {"nombre": "Coaching e Inserción Laboral","area":"00"},
           {"nombre": "Práctica Profesional","area":"00"}
         ]
@@ -1923,7 +1923,7 @@ const mallas = [
         "semestre": 4,
         "asignaturas": [
           {"nombre": "Enseñanzas de la Biblia","area":"00"},
-          {"nombre": "Base de Datos (*)","area":"02"},
+          {"nombre": "Base de Datos (*)","area":"03"},
           {"nombre": "Sistemas Operativos II","area":"04"},
           {"nombre": "Economía","area":"00"},
           {"nombre": "Cálculo para Ingeniería II","area":"00"},
@@ -2698,7 +2698,7 @@ const mallas = [
         "asignaturas": [
           {"nombre": "Programación I","area":"01"},
           {"nombre": "Física","area":"00"},
-          {"nombre": "Introducción a los Sistemas de Base de Datos","area":"02"},
+          {"nombre": "Introducción a los Sistemas de Base de Datos","area":"03"},
           {"nombre": "Programación de Robot","area":"03"},
           {"nombre": "Tópicos de Matemáticas para la Programación","area":"01"}
         ]
@@ -3252,7 +3252,7 @@ const mallas = [
           {"nombre": "Ecuaciones diferenciales","area":"00"},
           {"nombre": "Programación avanzada","area":"01"},
           {"nombre": "Óptica","area":"00"},
-          {"nombre": "Taller de Ingeniería de software","area":"02"},
+          {"nombre": "Taller de Ingeniería de Software","area":"02"},
           {"nombre": "Administración de base de datos","area":"03"},
           {"nombre": "CFG","area":"00"}
         ]
@@ -3933,7 +3933,7 @@ const mallas = [
         "asignaturas": [
           {"nombre": "Base de datos II","area":"03"},
           {"nombre": "Seguridad de la información","area":"04"},
-          {"nombre": "Calidad de software","area":"02"},
+          {"nombre": "Calidad de Software","area":"02"},
           {"nombre": "Inteligencia artificial","area":"03"},
           {"nombre": "Redes de computadores","area":"04"},
           {"nombre": "Práctica inicial","area":"00"}
@@ -4521,110 +4521,110 @@ const mallas = [
       {
         "semestre": 1,
         "asignaturas": [
-          {"nombre": "Álgebra y Trigonometría","area":"01"},
-          {"nombre": "Introducción a la Ingeniería","area":"01"},
-          {"nombre": "Comunicación Oral y Escrita","area":"01"},
+          {"nombre": "Álgebra y Trigonometría","area":"00"},
+          {"nombre": "Introducción a la Ingeniería","area":"00"},
+          {"nombre": "Comunicación Oral y Escrita","area":"00"},
           {"nombre": "Introducción a la Programación","area":"01"},
-          {"nombre": "Formación Integral Oferta Institucional","area":"01"}
+          {"nombre": "Formación Integral Oferta Institucional","area":"00"}
         ]
       },
       {
         "semestre": 2,
         "asignaturas": [
-          {"nombre": "Cálculo Diferencial","area":"01"},
-          {"nombre": "Química General","area":"01"},
+          {"nombre": "Cálculo Diferencial","area":"00"},
+          {"nombre": "Química General","area":"00"},
           {"nombre": "Estructuras Discretas para Cs. de la Comp.","area":"01"},
           {"nombre": "Programación Orientada a Objeto","area":"01"},
-          {"nombre": "Formación Integral Oferta Institucional","area":"01"}
+          {"nombre": "Formación Integral Oferta Institucional","area":"00"}
         ]
       },
       {
         "semestre": 3,
         "asignaturas": [
-          {"nombre": "Cálculo Integral","area":"01"},
-          {"nombre": "Álgebra Lineal","area":"01"},
-          {"nombre": "Física Newtoniana","area":"01"},
+          {"nombre": "Cálculo Integral","area":"00"},
+          {"nombre": "Álgebra Lineal","area":"00"},
+          {"nombre": "Física Newtoniana","area":"00"},
           {"nombre": "Estructuras de Datos","area":"01"},
-          {"nombre": "Inglés I","area":"01"},
-          {"nombre": "Administración General","area":"01"}
+          {"nombre": "Inglés I","area":"00"},
+          {"nombre": "Administración General","area":"00"}
         ]
       },
       {
         "semestre": 4,
         "asignaturas": [
-          {"nombre": "Cálculo en Varias Variables","area":"01"},
-          {"nombre": "Ecuaciones Diferenciales","area":"01"},
-          {"nombre": "Electromagnetismo","area":"01"},
-          {"nombre": "Modelamiento de Procesos e Información","area":"01"},
-          {"nombre": "Inglés II","area":"01"},
-          {"nombre": "Formación Integral Oferta Institucional","area":"01"}
+          {"nombre": "Cálculo en Varias Variables","area":"00"},
+          {"nombre": "Ecuaciones Diferenciales","area":"00"},
+          {"nombre": "Electromagnetismo","area":"00"},
+          {"nombre": "Modelamiento de Procesos e Información","area":"02"},
+          {"nombre": "Inglés II","area":"00"},
+          {"nombre": "Formación Integral Oferta Institucional","area":"00"}
         ]
       },
       {
         "semestre": 5,
         "asignaturas": [
-          {"nombre": "Ondas, Óptica y Física Moderna","area":"01"},
-          {"nombre": "Sistemas Digitales","area":"01"},
+          {"nombre": "Ondas, Óptica y Física Moderna","area":"00"},
+          {"nombre": "Sistemas Digitales","area":"00"},
           {"nombre": "Fundamentos de Ciencias de la Computación","area":"01"},
-          {"nombre": "Teoría de Sistemas","area":"01"},
-          {"nombre": "Inglés III","area":"01"},
-          {"nombre": "Gestión Contable","area":"01"}
+          {"nombre": "Teoría de Sistemas","area":"00"},
+          {"nombre": "Inglés III","area":"00"},
+          {"nombre": "Gestión Contable","area":"00"}
         ]
       },
       {
         "semestre": 6,
         "asignaturas": [
-          {"nombre": "Estadística y Probabilidades","area":"01"},
-          {"nombre": "Economía","area":"01"},
+          {"nombre": "Estadística y Probabilidades","area":"00"},
+          {"nombre": "Economía","area":"00"},
           {"nombre": "Análisis y Diseño de Algoritmos","area":"01"},
-          {"nombre": "Base de Datos","area":"01"},
-          {"nombre": "Inglés IV","area":"01"},
-          {"nombre": "Práctica Profesional I","area":"01"}
+          {"nombre": "Base de Datos","area":"03"},
+          {"nombre": "Inglés IV","area":"00"},
+          {"nombre": "Práctica Profesional I","area":"00"}
         ]
       },
       {
         "semestre": 7,
         "asignaturas": [
-          {"nombre": "Investigación de Operaciones","area":"01"},
-          {"nombre": "Arquitectura de Computadores","area":"01"},
-          {"nombre": "Administración y Prog. de Base de Datos","area":"01"},
-          {"nombre": "Sistemas de Información","area":"01"},
-          {"nombre": "Gestión Estratégica","area":"01"},
-          {"nombre": "Gestión Presupuestaria y Financiera","area":"01"},
-          {"nombre": "Formación Integral Oferta Institucional","area":"01"}
+          {"nombre": "Investigación de Operaciones","area":"00"},
+          {"nombre": "Arquitectura de Computadores","area":"04"},
+          {"nombre": "Administración y Prog. de Base de Datos","area":"03"},
+          {"nombre": "Sistemas de Información","area":"05"},
+          {"nombre": "Gestión Estratégica","area":"00"},
+          {"nombre": "Gestión Presupuestaria y Financiera","area":"00"},
+          {"nombre": "Formación Integral Oferta Institucional","area":"00"}
         ]
       },
       {
         "semestre": 8,
         "asignaturas": [
-          {"nombre": "Legislación","area":"01"},
-          {"nombre": "Sistemas Operativos","area":"01"},
-          {"nombre": "Inteligencia Artificial","area":"01"},
-          {"nombre": "Ingeniería de Software","area":"01"},
-          {"nombre": "Formulación y Evaluación de Proyectos","area":"01"},
-          {"nombre": "Práctica Profesional II","area":"01"}
+          {"nombre": "Legislación","area":"00"},
+          {"nombre": "Sistemas Operativos","area":"04"},
+          {"nombre": "Inteligencia Artificial","area":"03"},
+          {"nombre": "Ingeniería de Software","area":"02"},
+          {"nombre": "Formulación y Evaluación de Proyectos","area":"05"},
+          {"nombre": "Práctica Profesional II","area":"00"}
         ]
       },
       {
         "semestre": 9,
         "asignaturas": [
-          {"nombre": "Anteproyecto de Título","area":"01"},
-          {"nombre": "Comunicación de Datos y Redes","area":"01"},
-          {"nombre": "Electivo Profesional I","area":"01"},
-          {"nombre": "Gestión de Proyectos de Software","area":"01"},
-          {"nombre": "Gestión de Recursos Humanos","area":"01"},
-          {"nombre": "Electivo Profesional II","area":"01"},
-          {"nombre": "Electivo Profesional III","area":"01"}
+          {"nombre": "Anteproyecto de Título","area":"00"},
+          {"nombre": "Comunicación de Datos y Redes","area":"04"},
+          {"nombre": "Electivo Profesional I","area":"00"},
+          {"nombre": "Gestión de Proyectos de Software","area":"05"},
+          {"nombre": "Gestión de Recursos Humanos","area":"00"},
+          {"nombre": "Electivo Profesional II","area":"00"},
+          {"nombre": "Electivo Profesional III","area":"00"}
         ]
       },
       {
         "semestre": 10,
         "asignaturas": [
-          {"nombre": "Proyecto de Título","area":"01"},
-          {"nombre": "Seguridad Informática","area":"01"},
-          {"nombre": "Electivo Profesional IV","area":"01"},
-          {"nombre": "Electivo Profesional V","area":"01"},
-          {"nombre": "Electivo Profesional VI","area":"01"}
+          {"nombre": "Proyecto de Título","area":"00"},
+          {"nombre": "Seguridad Informática","area":"03"},
+          {"nombre": "Electivo Profesional IV","area":"00"},
+          {"nombre": "Electivo Profesional V","area":"00"},
+          {"nombre": "Electivo Profesional VI","area":"00"}
         ]
       }
     ]
@@ -4644,89 +4644,89 @@ const mallas = [
     "malla_curricular":  [
       { "semestre": 1,
         "asignaturas": [
-        {"nombre":"Álgebra y Trigonometría","area":"01"} ,
-        {"nombre":"Introducción a la Ingeniería","area":"01"},
-        {"nombre":"Comunicación Oral y Escrita","area":"01"},
-        {"nombre":"Programación nivel básico","area":"01"},
-        {"nombre":"Formación Integral","area":"01"},
-        {"nombre":"Pensamiento Computacional","area":"01"}
+        {"nombre":"Álgebra y Trigonometría","area":"00"} ,
+        {"nombre":"Introducción a la Ingeniería","area":"00"},
+        {"nombre":"Comunicación Oral y Escrita","area":"00"},
+        {"nombre":"Programación nivel básico","area":"00"},
+        {"nombre":"Formación Integral","area":"00"},
+        {"nombre":"Pensamiento Computacional","area":"00"}
       ]},
       { "semestre": 2,
         "asignaturas": [
-        {"nombre":"Cálculo Diferencial","area":"01"},
-        {"nombre":"Estructuras Discretas","area":"01"},
-        {"nombre":"Programación nivel medio","area":"01"},
-        {"nombre":"Química General","area":"01"},
-        {"nombre":"Formación Integral","area":"01"},
-        {"nombre":"Inglés I","area":"01"}
+        {"nombre":"Cálculo Diferencial","area":"00"},
+        {"nombre":"Estructuras Discretas","area":"00"},
+        {"nombre":"Programación nivel medio","area":"00"},
+        {"nombre":"Química General","area":"00"},
+        {"nombre":"Formación Integral","area":"00"},
+        {"nombre":"Inglés I","area":"00"}
       ]},
       { "semestre": 3,
         "asignaturas": [
-        {"nombre":"Cálculo Integral","area":"01"},
-        {"nombre":"Álgebra Lineal","area":"01"},
-        {"nombre":"Física Newtoniana","area":"01"},
-        {"nombre":"Estructuras de Datos","area":"01"},
-        {"nombre":"Bases de Datos I","area":"01"},
-        {"nombre":"Administración General","area":"01"}
+        {"nombre":"Cálculo Integral","area":"00"},
+        {"nombre":"Álgebra Lineal","area":"00"},
+        {"nombre":"Física Newtoniana","area":"00"},
+        {"nombre":"Estructuras de Datos","area":"00"},
+        {"nombre":"Bases de Datos I","area":"00"},
+        {"nombre":"Administración General","area":"00"}
       ]},
       { "semestre": 4,
         "asignaturas": [
-        {"nombre":"Cálculo Multivariable","area":"01"},
-        {"nombre":"Ecuaciones Diferenciales","area":"01"},
-        {"nombre":"Modelamiento de Datos","area":"01"},
-        {"nombre":"Ingeniería de Software I","area":"01"},
-       { "nombre":"Inglés II","area":"01"},
-       { "nombre":"Estadística y Probabilidades","area":"01"}
+        {"nombre":"Cálculo Multivariable","area":"00"},
+        {"nombre":"Ecuaciones Diferenciales","area":"00"},
+        {"nombre":"Modelamiento de Datos","area":"00"},
+        {"nombre":"Ingeniería de Software I","area":"00"},
+       { "nombre":"Inglés II","area":"00"},
+       { "nombre":"Estadística y Probabilidades","area":"00"}
       ]},
       { "semestre": 5,
         "asignaturas": [
-        {"nombre":"Optimización","area":"01"},
-        {"nombre":"Arquitectura de Computadores","area":"01"},
-        {"nombre":"Sistemas Operativos","area":"01"},
-        {"nombre":"Ingeniería de Software II","area":"01"},
-        {"nombre":"Bases de Datos II","area":"01"},
-        {"nombre":"Ingeniería Económica","area":"01"}
+        {"nombre":"Optimización","area":"00"},
+        {"nombre":"Arquitectura de Computadores","area":"00"},
+        {"nombre":"Sistemas Operativos","area":"00"},
+        {"nombre":"Ingeniería de Software II","area":"00"},
+        {"nombre":"Bases de Datos II","area":"00"},
+        {"nombre":"Ingeniería Económica","area":"00"}
       ]},
       { "semestre": 6,
         "asignaturas": [
-        {"nombre":"Redes de Computadores","area":"01"},
-        {"nombre":"Arquitectura de Software","area":"01"},
-        {"nombre":"Ciencia de Datos","area":"01"},
-        {"nombre":"Ingeniería de Requisitos","area":"01"},
-        {"nombre":"Gestión de Proyectos Informáticos","area":"01"},
-        {"nombre":"Práctica Inicial","area":"01"}
+        {"nombre":"Redes de Computadores","area":"00"},
+        {"nombre":"Arquitectura de Software","area":"00"},
+        {"nombre":"Ciencia de Datos","area":"00"},
+        {"nombre":"Ingeniería de Requisitos","area":"00"},
+        {"nombre":"Gestión de Proyectos Informáticos","area":"00"},
+        {"nombre":"Práctica Inicial","area":"00"}
       ]},
       { "semestre": 7,
         "asignaturas": [
-        {"nombre":"Inteligencia Artificial","area":"01"},
-        {"nombre":"Aprendizaje Automático","area":"01"},
-       { "nombre":"Sistemas Distribuidos","area":"01"},
-       { "nombre":"Calidad y Pruebas de Software","area":"01"},
-        {"nombre":"Seguridad Informática","area":"01"},
-        {"nombre":"Formulación y Evaluación de Proyectos","area":"01"}
+        {"nombre":"Inteligencia Artificial","area":"00"},
+        {"nombre":"Aprendizaje Automático","area":"00"},
+       { "nombre":"Sistemas Distribuidos","area":"00"},
+       { "nombre":"Calidad y Pruebas de Software","area":"00"},
+        {"nombre":"Seguridad Informática","area":"00"},
+        {"nombre":"Formulación y Evaluación de Proyectos","area":"00"}
       ]},
       { "semestre": 8,
         "asignaturas": [
-        {"nombre":"Big Data y Analítica","area":"01"},
-        {"nombre":"Cloud Computing y DevOps","area":"01"},
-        {"nombre":"Internet de las Cosas","area":"01"},
-        {"nombre":"Ingeniería de Datos","area":"01"},
-        {"nombre":"Innovación y Emprendimiento","area":"01"},
-        {"nombre":"Práctica Avanzada","area":"01"}
+        {"nombre":"Big Data y Analítica","area":"00"},
+        {"nombre":"Cloud Computing y DevOps","area":"00"},
+        {"nombre":"Internet de las Cosas","area":"00"},
+        {"nombre":"Ingeniería de Datos","area":"00"},
+        {"nombre":"Innovación y Emprendimiento","area":"00"},
+        {"nombre":"Práctica Avanzada","area":"00"}
       ]},
       { "semestre": 9,
         "asignaturas": [
-        {"nombre":"Gobierno y Gestión TI","area":"01"},
-        {"nombre":"Ciberseguridad Avanzada","area":"01"},
-        {"nombre":"Electivo de Especialidad I","area":"01"},
-        {"nombre":"Electivo de Especialidad II","area":"01"},
-        {"nombre":"Anteproyecto de Título","area":"01"}
+        {"nombre":"Gobierno y Gestión TI","area":"00"},
+        {"nombre":"Ciberseguridad Avanzada","area":"00"},
+        {"nombre":"Electivo de Especialidad I","area":"00"},
+        {"nombre":"Electivo de Especialidad II","area":"00"},
+        {"nombre":"Anteproyecto de Título","area":"00"}
       ]},
       { "semestre": 10,
         "asignaturas": [
-        {"nombre":"Proyecto de Título","area":"01"},
-        {"nombre":"Ética y Legislación Informática","area":"01"},
-        {"nombre":"Síntesis de Integración Profesional","area":"01"}
+        {"nombre":"Proyecto de Título","area":"00"},
+        {"nombre":"Ética y Legislación Informática","area":"00"},
+        {"nombre":"Síntesis de Integración Profesional","area":"00"}
       ]}
     ]
   }
