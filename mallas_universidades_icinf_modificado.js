@@ -4659,7 +4659,7 @@ const mallas = [
       {"nombre":"Algoritmos y Programación","area":"01"},
       {"nombre":"Álgebra Lineal","area":"00"},
       {"nombre":"Cálculo Diferencial e Integral","area":"00"},
-      {"nombre":"Estructuras Discretas para Ciencias de la Computación","area":"01"},
+      {"nombre":"Estructuras Discretas para Ciencias de la Computación","area":"00"},
       {"nombre":"Formación Integral Complementaria (3)","area":"00"}
     ]
   },
