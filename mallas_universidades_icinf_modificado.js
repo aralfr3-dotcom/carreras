@@ -4645,7 +4645,7 @@ const mallas = [
   {
     "semestre": 1,
     "asignaturas": [
-      {"nombre":"Introducción a la Programación","area":"00"},
+      {"nombre":"Introducción a la Programación","area":"01"},
       {"nombre":"Álgebra y Trigonometría","area":"00"},
       {"nombre":"Fundamentos de Cálculo","area":"00"},
       {"nombre":"Introducción a la Ingeniería (Informática)","area":"00"},
@@ -4656,10 +4656,10 @@ const mallas = [
   {
     "semestre": 2,
     "asignaturas": [
-      {"nombre":"Algoritmos y Programación","area":"00"},
+      {"nombre":"Algoritmos y Programación","area":"01"},
       {"nombre":"Álgebra Lineal","area":"00"},
       {"nombre":"Cálculo Diferencial e Integral","area":"00"},
-      {"nombre":"Estructuras Discretas para Ciencias de la Computación","area":"00"},
+      {"nombre":"Estructuras Discretas para Ciencias de la Computación","area":"01"},
       {"nombre":"Formación Integral Complementaria (3)","area":"00"}
     ]
   },
@@ -4667,8 +4667,8 @@ const mallas = [
     "semestre": 3,
     "asignaturas": [
       {"nombre":"VcM","area":"00"},
-      {"nombre":"Estructuras de Datos","area":"00"},
-      {"nombre":"Gestión de Empresas","area":"00"},
+      {"nombre":"Estructuras de Datos","area":"01"},
+      {"nombre":"Gestión de Empresas","area":"05"},
       {"nombre":"Cálculo Multivariable","area":"00"},
       {"nombre":"Química","area":"00"},
       {"nombre":"Inglés Comunicacional I","area":"00"}
@@ -4677,8 +4677,8 @@ const mallas = [
   {
     "semestre": 4,
     "asignaturas": [
-      {"nombre":"Programación Orientada a Objetos","area":"00"},
-      {"nombre":"Gestión Contable y Finanzas","area":"00"},
+      {"nombre":"Programación Orientada a Objetos","area":"01"},
+      {"nombre":"Gestión Contable y Finanzas","area":"05"},
       {"nombre":"Ecuaciones Diferenciales","area":"00"},
       {"nombre":"Física Mecánica","area":"00"},
       {"nombre":"Inglés Comunicacional II","area":"00"},
@@ -4688,9 +4688,9 @@ const mallas = [
   {
     "semestre": 5,
     "asignaturas": [
-      {"nombre":"Fundamentos de Ciencias de la Computación","area":"00"},
-      {"nombre":"Fundamentos de Ingeniería de Software","area":"00"},
-      {"nombre":"Economía","area":"00"},
+      {"nombre":"Fundamentos de Ciencias de la Computación","area":"01"},
+      {"nombre":"Fundamentos de Ingeniería de Software","area":"02"},
+      {"nombre":"Economía","area":"05"},
       {"nombre":"Estadística y Probabilidades","area":"00"},
       {"nombre":"Electromagnetismo Aplicado","area":"00"},
       {"nombre":"Formación Integral Complementaria (4)","area":"00"},
@@ -4700,9 +4700,9 @@ const mallas = [
   {
     "semestre": 6,
     "asignaturas": [
-      {"nombre":"Análisis y Diseño de Algoritmos","area":"00"},
-      {"nombre":"Análisis y Diseño de Software","area":"00"},
-      {"nombre":"Base de Datos","area":"00"},
+      {"nombre":"Análisis y Diseño de Algoritmos","area":"01"},
+      {"nombre":"Análisis y Diseño de Software","area":"02"},
+      {"nombre":"Base de Datos","area":"03"},
       {"nombre":"Optimización","area":"00"},
       {"nombre":"Inglés Comunicacional IV","area":"00"},
       {"nombre":"Taller Integrador II","area":"00"},
@@ -4712,23 +4712,23 @@ const mallas = [
   {
     "semestre": 7,
     "asignaturas": [
-      {"nombre":"Arquitectura de Software","area":"00"},
-      {"nombre":"Circuitos Digitales y Arquitectura de Computadores","area":"00"},
-      {"nombre":"Programación y Optimización de Bases de Datos","area":"00"},
-      {"nombre":"Fundamentos de Inteligencia Artificial","area":"00"},
-      {"nombre":"Formulación y Gestión de Proyectos de Tecnología de Información","area":"00"},
-      {"nombre":"Sistemas de Información","area":"00"},
+      {"nombre":"Arquitectura de Software","area":"02"},
+      {"nombre":"Circuitos Digitales y Arquitectura de Computadores","area":"04"},
+      {"nombre":"Programación y Optimización de Bases de Datos","area":"03"},
+      {"nombre":"Fundamentos de Inteligencia Artificial","area":"03"},
+      {"nombre":"Formulación y Gestión de Proyectos de Tecnología de Información","area":"05"},
+      {"nombre":"Sistemas de Información","area":"05"},
       {"nombre":"Formación Integral Complementaria (5)","area":"00"}
     ]
   },
   {
     "semestre": 8,
     "asignaturas": [
-      {"nombre":"Ingeniería y Calidad de Software","area":"00"},
-      {"nombre":"Sistemas Operativos","area":"00"},
-      {"nombre":"Aprendizaje Automático","area":"00"},
-      {"nombre":"Innovación Tecnológica y Transformación Digital","area":"00"},
-      {"nombre":"Gestión Estratégica de Tecnología de Información","area":"00"},
+      {"nombre":"Ingeniería y Calidad de Software","area":"02"},
+      {"nombre":"Sistemas Operativos","area":"04"},
+      {"nombre":"Aprendizaje Automático","area":"03"},
+      {"nombre":"Innovación Tecnológica y Transformación Digital","area":"05"},
+      {"nombre":"Gestión Estratégica de Tecnología de Información","area":"05"},
       {"nombre":"Seminario de Investigación","area":"00"}
     ]
   },
@@ -4738,8 +4738,8 @@ const mallas = [
       {"nombre":"Electivo I","area":"00"},
       {"nombre":"Electivo II","area":"00"},
       {"nombre":"Electivo III","area":"00"},
-      {"nombre":"Comunicación de Datos y Redes","area":"00"},
-      {"nombre":"Aprendizaje Profundo","area":"00"},
+      {"nombre":"Comunicación de Datos y Redes","area":"04"},
+      {"nombre":"Aprendizaje Profundo","area":"03"},
       {"nombre":"Práctica Profesional","area":"00"},
       {"nombre":"Anteproyecto de Título","area":"00"}
     ]
@@ -4750,8 +4750,8 @@ const mallas = [
       {"nombre":"Electivo IV","area":"00"},
       {"nombre":"Electivo V","area":"00"},
       {"nombre":"Electivo VI","area":"00"},
-      {"nombre":"Programación Paralela y Distribuida","area":"00"},
-      {"nombre":"Infraestructura y Servicio Cloud","area":"00"},
+      {"nombre":"Programación Paralela y Distribuida","area":"04"},
+      {"nombre":"Infraestructura y Servicio Cloud","area":"04"},
       {"nombre":"Proyecto de Título","area":"00"}
     ]
   }
